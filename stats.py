@@ -28,3 +28,17 @@ def char_count(raw_text):
                 passed_char_count += 1
                 passed_dict[char] += 1
     return passed_dict, passed_char_count
+
+def sort_on(items):
+    return items["value"]
+
+def dict_to_list_sorted(dictionary):
+    new_list = []
+    for item in dictionary:
+        new_dict = {}
+        new_dict["name"] = item
+        new_dict["value"] = dictionary[item]
+        new_list.append(new_dict)
+    new_list.sort(reverse=True, key=sort_on)
+    return new_list
+        
