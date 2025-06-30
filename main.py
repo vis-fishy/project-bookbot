@@ -1,4 +1,3 @@
-#!C:\Users\user\AppData\Local\Programs\Python\Launcher\py.exe
 from stats import *
 import sys
 
